@@ -45,7 +45,7 @@ jobs:
         format: 'json' 
         output: 'results.json'
     - name: Upload vulnerability report
-      uses: github/codeql-action/upload-sarif@v2
+      uses: actions/upload-artifact@v3
       with:
         name: anchore-scan-artifact
         path: ./results.json
