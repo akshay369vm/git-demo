@@ -45,7 +45,7 @@ jobs:
         format: 'json' 
         output: 'results.json'
     - name: Upload vulnerability report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: anchore-scan-artifact
         path: ./results.json
